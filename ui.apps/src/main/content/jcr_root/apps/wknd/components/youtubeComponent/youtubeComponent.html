@@ -1,17 +1,19 @@
-
-<div data-sly-use.ytModel="youtubecomponent.js">
+<!-- <div data-sly-use.ytModel="youtubecomponent.js">
 
     <iframe width="420" height="315"
     src="https://www.youtube.com/embed/${ytModel.ytVideo}">
     </iframe>
-
-    ${ytModel.anotherProperty}
-</div>
+    <p>Title: ${ytModel.ytTitle}</p>
+</div> -->
 
 <div data-sly-use.ytModelJava="com.adobe.aem.guides.wknd.core.models.YoutubeComponentModel">
 
     <iframe width="420" height="315"
     src="https://www.youtube.com/embed/${ytModelJava.videoId}">
     </iframe>
+
+    <p>Title: ${ytModelJava.videoTitle}</p>
+    <br>
+    <p>Author Name: ${ytModelJava.videoAuthorName}</p>
 
 </div>
